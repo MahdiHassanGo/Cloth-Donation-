@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "title": "Warmth for Sylhet",
+      "image": "https://sylhettouristplaces.com/wp-content/uploads/2020/02/Bisnakandi-Sylhet.jpg",
+      "description": "Providing warm clothing to the rural areas of Sylhet, where winters are harsh for low-income families.",
+      "status": "Active",
+      "contactInfo": "contact@sylhetwarmth.org",
+      "division": "Sylhet"
+    },
+    {
+      "id": 2,
+      "title": "Dhaka Winter Aid",
+      "image": "https://content.r9cdn.net/rimg/dimg/c9/06/8d4fe0d8-city-28030-164fcc85915.jpg?crop=true&width=1020&height=498",
+      "description": "Aiming to collect and distribute winter clothing to homeless people in Dhaka city.",
+      "status": "Active",
+      "contactInfo": "contact@dhakaaid.org",
+      "division": "Dhaka"
+    },
+    {
+      "id": 3,
+      "title": "Rajshahi Warmth Drive",
+      "image": "https://www.thetravelerbd.com/wp-content/uploads/2024/02/Best-Tourist-Place-in-Rajshahi-Division.png",
+      "description": "Helping vulnerable people in Rajshahi stay warm by collecting sweaters, blankets, and jackets.",
+      "status": "Completed",
+      "contactInfo": "info@rajshahiwarmth.com",
+      "division": "Rajshahi"
+    },
+    {
+      "id": 4,
+      "title": "Chattogram Comfort Initiative",
+      "image": "https://c8.alamy.com/comp/2GNDNCN/chittagong-port-officially-chattogram-bangladesh-07-spptember-2021-hundreds-of-vessels-are-seen-anchored-in-karnafuli-river-near-port-in-chattogram-photo-by-sipa-usa-2GNDNCN.jpg",
+      "description": "Collecting and distributing winter essentials to underprivileged communities in Chattogram.",
+      "status": "Active",
+      "contactInfo": "contact@chattowarm.org",
+      "division": "Chattogram"
+    },
+    {
+      "id": 5,
+      "title": "Mymensingh Winter Relief",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/%E0%A6%B6%E0%A6%B6%E0%A7%80_%E0%A6%B2%E0%A6%9C_%28%E0%A7%A6%E0%A7%A8%29.jpg/432px-%E0%A6%B6%E0%A6%B6%E0%A7%80_%E0%A6%B2%E0%A6%9C_%28%E0%A7%A6%E0%A7%A8%29.jpg",
+      "description": "Providing winter clothing to rural communities in Mymensingh struggling with the cold.",
+      "status": "Upcoming",
+      "contactInfo": "help@mymensinghwarmth.com",
+      "division": "Mymensingh"
+    },
+    {
+      "id": 6,
+      "title": "Khulna Care Campaign",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Durbar_Bangla_at_kuet.jpg/432px-Durbar_Bangla_at_kuet.jpg",
+      "description": "Supporting disadvantaged families in Khulna by delivering donated clothes and blankets.",
+      "status": "Active",
+      "contactInfo": "support@khulnacare.org",
+      "division": "Khulna"
+    },
+    {
+      "id": 7,
+      "title": "Barishal Blanket Drive",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Guthiya_mosque_Ri_palash_03.jpg/420px-Guthiya_mosque_Ri_palash_03.jpg",
+      "description": "Focusing on providing blankets to elderly residents in Barishal facing the cold.",
+      "status": "Completed",
+      "contactInfo": "info@barishalwarmth.org",
+      "division": "Barishal"
+    },
+    {
+      "id": 8,
+      "title": "Rangpur Winter Help",
+      "image": "https://cdn.britannica.com/93/140293-050-09134FEF/Tajhat-Palace-Rangpur-Bangl.jpg?w=300",
+      "description": "Organizing clothing distribution for low-income families in Rangpur district.",
+      "status": "Upcoming",
+      "contactInfo": "connect@rangpurhelp.org",
+      "division": "Rangpur"
+    }
+  ]
+  
