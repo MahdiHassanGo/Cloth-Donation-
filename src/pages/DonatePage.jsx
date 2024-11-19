@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const DonatePage = () => {
 
@@ -9,7 +9,8 @@ const DonatePage = () => {
 
 
     return (
-        <div className='w-11/12 mx-auto'>
+      <div>
+<div className='w-11/12 mx-auto mb-10'>
             <Navbar></Navbar>
             <h2 className='text-3xl font-bold text-center my-8'>Donation Campaigns</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
@@ -26,7 +27,7 @@ const DonatePage = () => {
                           <p>{campaign.description}</p>
                           <p>{campaign.division}</p>
                           <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                            <Link to= {`/donationdetails/${campaign.id}`}className="btn bg-Buttons text-white">Donate Now</Link>
                           </div>
                         </div>
                       </div>)
@@ -36,9 +37,13 @@ const DonatePage = () => {
             </div>
     
 
-            <Footer></Footer>
-            
+          
+        
         </div>
+        <Footer></Footer>
+      </div>
+        
+        
     );
 };
 
