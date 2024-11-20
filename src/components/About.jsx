@@ -2,13 +2,14 @@
 
 const About = () => {
     return (
-        // about section 
-        <div className="hero bg-About min-h-screen mb-10">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="../../public/assets/about-photo.jpg"
-            className="max-w-sm rounded-lg shadow-2xl" />
-          <div>
+      <div
+      className="hero min-h-screen mb-10"
+      style={{
+        backgroundImage: "url(../../public/assets/about-photo.jpg)",
+      }}>
+      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-content text-neutral-content text-center mb-10">
+      <div>
             <h1 className="text-5xl font-bold">About Us</h1>
             <p className="py-6">
             At CareHive, we believe in the power of community and compassion to make a difference. Founded with the vision of creating a warmer, more inclusive world, we strive to address the challenges faced by vulnerable individuals, especially during harsh winters.
@@ -20,9 +21,11 @@ We’re more than just an organization—we’re a movement. A movement fueled b
 Together, let’s create a brighter future, one step at a time.
             </p>
            
-          </div>
+         
+        
         </div>
       </div>
+    </div>
     );
 };
 

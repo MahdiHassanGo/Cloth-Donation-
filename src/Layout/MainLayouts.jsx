@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import HowItWorks from "../components/HowItWorks";
@@ -8,8 +9,12 @@ import { Outlet } from "react-router-dom";
 
 
 const MainLayouts = () => {
+    useEffect(() => {
+        document.title = "Main | CareHive";
+    }, []);
     return (
-        <div className="w-11/12 mx-auto">
+        <div>
+ <div className="">
             <Navbar></Navbar>
 
             <MainBanner/>
@@ -21,8 +26,11 @@ const MainLayouts = () => {
 
 <Outlet  />
 
-       <Footer></Footer>
+      
         </div>
+        <Footer></Footer>
+        </div>
+       
     );
 };
 

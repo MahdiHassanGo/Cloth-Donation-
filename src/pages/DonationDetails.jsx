@@ -23,6 +23,10 @@ const style = {
 
 
 const DonationDetails = () => {
+
+  React.useEffect(() => {
+    document.title = "Details | CareHive";
+}, []);
     const  data = useLoaderData();
     const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -34,7 +38,7 @@ const DonationDetails = () => {
    const isFormValid = quantity.trim() && itemType.trim() && pickupLocation.trim();
 
     return (
-        <div className="w-11/12 mx-auto">
+        <div className="">
              <Navbar>/</Navbar>
    <div className='w-full lg:w-8/12 mx-auto py-16 bg-gray-100 mb-10 shadows-lg'>
            

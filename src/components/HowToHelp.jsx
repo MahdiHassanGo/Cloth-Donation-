@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HowToHelp = () => {
     return (
         <div>
-            <div className="w-11/12 mx-auto">
+            <div className="">
                 <Navbar />
                 <div className="hero bg-howtohelp min-h-screen mb-10 text-white">
                     <div className="hero-content flex-col lg:flex-row-reverse">
