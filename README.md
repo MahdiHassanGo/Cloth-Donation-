@@ -48,7 +48,7 @@ https://clothing-donation-d23d4.web.app/
    - **Authentication**: Firebase Authentication  
    - **Data Handling**: Dynamic JSON-based campaign data  
    - **Hosting**: Netlify / Firebase Hosting
-<img src="./main4.png">
+
 2. **Key Functionalities**  
    - Private routing for secured user access.  
    - Firebase-powered login, registration, and Google authentication.  
@@ -57,6 +57,7 @@ https://clothing-donation-d23d4.web.app/
 3. **Deployment**  
    - Single-page application optimized for seamless navigation and no errors on page reloads.  
    - Firebase domain authorization for private routes.  
+<img src="./main4.png">
 
 
 
