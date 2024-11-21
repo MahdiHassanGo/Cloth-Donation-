@@ -5,6 +5,8 @@ Welcome to the **Winter Clothing Donation Website**, a platform designed to conn
 ### 🌐 **Live Site URL**  
 https://clothing-donation-d23d4.web.app/
 
+<img src="./main1.png">
+
 ---
 
 ## **Features and Highlights**
@@ -28,7 +30,7 @@ https://clothing-donation-d23d4.web.app/
 
 7. **Interactive Animations**  
    Enhanced user experience with AOS animations across the site.
-
+<img src="./main2.png">
 ---
 
 ## **How to Use**
@@ -37,7 +39,7 @@ https://clothing-donation-d23d4.web.app/
 3. Log in or register to access private routes like the donation details and user dashboard.  
 4. Fill out the donation form to contribute winter clothing items.  
 5. Update your profile to personalize your experience.
-
+<img src="./main3.png">
 ---
 
 ## **Technical Overview**
@@ -46,7 +48,7 @@ https://clothing-donation-d23d4.web.app/
    - **Authentication**: Firebase Authentication  
    - **Data Handling**: Dynamic JSON-based campaign data  
    - **Hosting**: Netlify / Firebase Hosting
-
+<img src="./main4.png">
 2. **Key Functionalities**  
    - Private routing for secured user access.  
    - Firebase-powered login, registration, and Google authentication.  
