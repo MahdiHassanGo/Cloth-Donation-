@@ -5,20 +5,29 @@ import HowItWorks from "../components/HowItWorks";
 import MainBanner from "../components/MainBanner";
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
+import OurRecentWork from "../components/OurRecentWork";
+import FastMarquee from "../components/FastMarquee";
 
 
 
 const MainLayouts = () => {
     useEffect(() => {
-        document.title = "Main | CareHive";
+        document.title = "Home | CareHive";
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
     }, []);
     return (
-        <div>
- <div className="">
-            <Navbar></Navbar>
-
+        <div  >
+             <Navbar></Navbar>
+ <div className="w-11/12 mx-auto">
+           
+ <FastMarquee></FastMarquee>
             <MainBanner/>
             <About></About>
+            <OurRecentWork></OurRecentWork>
+        
             <HowItWorks></HowItWorks>
 
        {/* more to come */}

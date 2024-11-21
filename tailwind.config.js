@@ -11,9 +11,10 @@ export default {
       colors: {
         Footer: '#FFFBE6',
         Buttons: '#133E87',
-        About:'#E8ECD7',
+        About:'#E5E1DA',
         howitworks:'#EED3B1',
-        howtohelp:'#605EA1'
+        howtohelp:'#608BC1',
+        Profile:'#CBDCEB',
      
       }
     },

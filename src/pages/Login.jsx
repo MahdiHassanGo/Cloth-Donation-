@@ -1,21 +1,30 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+
 import { FaGoogle } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Login = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   useEffect(() => {
     document.title = "Login | CareHive";
+}, []);
+useEffect(() => {
+  window.scrollTo(0, 0);
 }, []);
 
 const { userLogin, setUser, googleSignIn } = useContext(AuthContext);
 const [error, setError] = useState({});
 const location = useLocation();
 const navigate = useNavigate();
-console.log(location);
+
 
 
 const handleSubmit = (e) => {
@@ -23,7 +32,7 @@ const handleSubmit = (e) => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log({ email, password });
+ 
 
     userLogin(email, password)
         .then((result) => {
@@ -58,13 +67,13 @@ const handleGoogleSignIn = () => {
 
   return (
     <div>
-      <Navbar />
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-col">
+      <ToastContainer position="top-center" />
+      <div className="hero bg-base-200  min-h-screen flex items-center justify-center" data-aos="fade-up" >
+        <div className="hero-content flex-col  gap-6 w-full px-4 sm:px-8 md:px-16 lg:px-0">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Login now!</h1>
           </div>
-          <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div className="card bg-base-100 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg shadow-2xl p-4 md:p-6 ">
             <form onSubmit={handleSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -91,9 +100,9 @@ const handleGoogleSignIn = () => {
                 />
                 <div className="flex gap-10 mt-2">
                   <label className="label">
-                    <a href="#" className="label-text-alt link link-hover">
+                    <Link to='/auth/forgetpassword' className="label-text-alt link link-hover">
                       Forgot password?
-                    </a>
+                    </Link>
                   </label>
                   <label className="label">
                     <Link to="/auth/register" className="label-text-alt link link-hover">
@@ -112,7 +121,7 @@ const handleGoogleSignIn = () => {
           </div>
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 };

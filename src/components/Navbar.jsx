@@ -1,36 +1,91 @@
 import React, { useContext } from 'react';
-import { BiDonateHeart } from "react-icons/bi";
+import { BiDonateHeart  } from "react-icons/bi";
+import { FaUser } from "react-icons/fa";
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
-const {user ,logOut} =useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+
   return (
-      
-        <div className="flex flex-col md:flex-row justify-between items-center">
-        <Link to='/' className="flex items-center justify-center"><BiDonateHeart className='text-7xl ml-9 text-Buttons' /> 
-        <div>
-          <h1 className='font-bold text-4xl '>CareHive </h1></div> </Link>
-        <div className="nav flex flex-col items-center md:flex-row space-x-0 md:space-x-5 ">
-          <Link className='btn bg-Buttons text-white' to="/">Home</Link>
-          <Link  className='btn bg-Buttons text-white'  to="/donatepage">Donation Campaigns</Link>
-          
-          <Link  className='btn bg-Buttons text-white'  to="/howtohelp">How to Help</Link>
-          <Link  className='btn bg-Buttons text-white'  to="/dev">Dashboard</Link>
-         
-        </div>
-        <div className="login flex  gap-2 items-center">
-          <div className="flex items-center gap-4 ">
-            <div>{user&&user.email}</div>
-            {
-              user &&  user?.email ? (<button onClick={logOut} className='btn bg-Buttons text-white'>Log OUT</button> ):( <NavLink to='/auth/login' className='btn bg-Buttons text-white'>Login</NavLink>)
+    <nav className="bg-Profile shadow-md w-full">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-6">
+        {}
+        <Link to="/" className="flex items-center gap-2">
+          <BiDonateHeart className="text-6xl text-Buttons" />
+          <h1 className="font-extrabold text-4xl text-Buttons">CareHive</h1>
+        </Link>
+
+        {/* Navigation Links */}
+        <div className="nav flex flex-col md:flex-row items-center gap-4 md:gap-6 mt-4 md:mt-0">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-Buttons font-semibold border-b-2 border-Buttons pb-1'
+                : 'text-gray-600 hover:text-Buttons'
             }
-          
-          </div>
-     
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/donatepage"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-Buttons font-semibold border-b-2 border-Buttons pb-1'
+                : 'text-gray-600 hover:text-Buttons'
+            }
+          >
+            Donation Campaigns
+          </NavLink>
+          <NavLink
+            to="/howtohelp"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-Buttons font-semibold border-b-2 border-Buttons pb-1'
+                : 'text-gray-600 hover:text-Buttons'
+            }
+          >
+            How to Help
+          </NavLink>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              isActive
+                ? 'text-Buttons font-semibold border-b-2 border-Buttons pb-1'
+                : 'text-gray-600 hover:text-Buttons'
+            }
+          >
+            Dashboard
+          </NavLink>
+        </div>
+
+        {/* User Login Section */}
+        <div className="login flex items-center gap-4 mt-4 md:mt-0">
+          <div>
+            {user && user?.email ? <div><img className='w-10 rounded-full' src={user?.photoURL} alt="" /></div>: <FaUser />}
+            
+            </div>
+          <div className="text-gray-600">{user?.displayName}</div>
+          {user ? (
+            <button
+              onClick={logOut}
+              className="bg-Buttons text-white py-2 px-4 rounded hover:bg-opacity-90 transition"
+            >
+              Log Out
+            </button>
+          ) : (
+            <NavLink
+              to="/auth/login"
+              className="bg-Buttons text-white py-2 px-4 rounded hover:bg-opacity-90 transition"
+            >
+              Login
+            </NavLink>
+          )}
         </div>
       </div>
-    );
+    </nav>
+  );
 };
 
 export default Navbar;

@@ -1,19 +1,30 @@
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const HowToHelp = () => {
+    useEffect(() => {
+        document.title = "HowToHelp | CareHive";
+    }, []);
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+    
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <div className="">
                 <Navbar />
-                <div className="hero bg-howtohelp min-h-screen mb-10 text-white">
+                <div className="hero bg-howtohelp min-h-screen mb-10 text-white w-11/12 mx-auto mt-10" data-aos="fade-up">
                     <div className="hero-content flex-col lg:flex-row-reverse">
-                        <img
-                            src="../../public/assets/how-to-help.jpg"
-                            className="max-w-lg rounded-lg shadow-2xl"
-                            alt="Help"
-                        />
+                       <div>
+   <img src="/assets/Mobile-prev.png" alt="" />
+                       </div>
                         <div>
                             <h1 className="text-5xl font-bold">How to Help</h1>
                             <p className="py-6">

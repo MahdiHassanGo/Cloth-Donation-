@@ -23,7 +23,9 @@ const style = {
 
 
 const DonationDetails = () => {
-
+React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
   React.useEffect(() => {
     document.title = "Details | CareHive";
 }, []);

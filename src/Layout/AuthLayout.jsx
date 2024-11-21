@@ -1,6 +1,7 @@
 
 import { Outlet } from 'react-router-dom';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 
 
@@ -9,7 +10,7 @@ import Footer from '../components/Footer';
 const AuthLayout = () => {
     return (
         <div>
-            
+            <Navbar></Navbar>
   
 
             <header className='py-3 w-11/12 mx-auto'> 
