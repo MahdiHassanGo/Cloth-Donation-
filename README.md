@@ -3,7 +3,7 @@
 Welcome to the **Winter Clothing Donation Website**, a platform designed to connect donors with volunteers to provide winter clothing to those in need across Bangladesh. With a mission to bring warmth and comfort during the colder months, this platform makes donating simple, impactful, and accessible.
 
 ### 🌐 **Live Site URL**  
-[Visit Winter Clothing Donation Website](#) *([Replace with the live URL once deployed](https://clothing-donation-d23d4.web.app/))*
+https://clothing-donation-d23d4.web.app/
 
 ---
 
