@@ -43,20 +43,18 @@ https://clothing-donation-d23d4.web.app/
 ---
 
 ## **Technical Overview**
-1. **Technology Stack**  
+ **Technology Stack**  
    - **Frontend**: React, TailwindCSS, DaisyUI  
    - **Authentication**: Firebase Authentication  
    - **Data Handling**: Dynamic JSON-based campaign data  
    - **Hosting**: Netlify / Firebase Hosting
 
-2. **Key Functionalities**  
+ **Key Functionalities**  
    - Private routing for secured user access.  
    - Firebase-powered login, registration, and Google authentication.  
    - Dynamic campaign display from JSON data.  
 
-3. **Deployment**  
-   - Single-page application optimized for seamless navigation and no errors on page reloads.  
-   - Firebase domain authorization for private routes.  
+  
 <img src="./main4.png">
 
 
